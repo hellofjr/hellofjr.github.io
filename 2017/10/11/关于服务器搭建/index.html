@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Hexo</title>
+  <title>关于服务器搭建 | Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -170,47 +170,12 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-<!-- ============================ Content =========================== -->
-
+      
 <section id="intro">
     <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2017/10/11/关于服务器搭建/">关于服务器搭建</a></h3>
-                    <span>
-                        <span class="post-meta">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
       <time datetime="2017-10-11T12:16:47.000Z" itemprop="datePublished">
           2017-10-11
       </time>
@@ -221,93 +186,74 @@
     
     
 </span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        
-#VPS搭建ShadowSocks翻墙学习网址：https://www.diycode.cc/topics/738
-
-#VPS提供商–Vultr.com
-
-注册账号
-http://www.vultr.com/?ref=7038906注册
-可使用支付宝充值，服务器按天计费
-
-
-创建Server
-在Vultr Server页面，点击右上角“+”按钮
-Los Angelos节点我在用，感觉还可以，看youtube视频没有压力
-操作系统Cen
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2017/10/11/关于服务器搭建/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <h1>关于服务器搭建</h1>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2017/10/10/10-10日常/">日常随笔</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2017-10-10T12:04:36.000Z" itemprop="datePublished">
-          2017-10-10
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        工作记录
-与供应链讨论定制品与标品下单流程
-讨论订单状态
-讨论套餐包内单品的修改
-学习C#
+        <div class="col-md-8 col-md-offset-2">
+      		<blockquote>
+<p>#VPS搭建ShadowSocks翻墙<br>学习网址：<a href="https://www.diycode.cc/topics/738" target="_blank" rel="external">https://www.diycode.cc/topics/738</a></p>
+</blockquote>
+<p>#VPS提供商–Vultr.com</p>
+<ul>
+<li>注册账号<ul>
+<li><a href="http://www.vultr.com/?ref=7038906注册" target="_blank" rel="external">http://www.vultr.com/?ref=7038906注册</a></li>
+<li>可使用支付宝充值，服务器按天计费</li>
+</ul>
+</li>
+<li>创建Server<ul>
+<li>在Vultr Server页面，点击右上角“+”按钮</li>
+<li>Los Angelos节点我在用，感觉还可以，看youtube视频没有压力</li>
+<li>操作系统CenterOS，选择的是5美元/月，2.5美元/月的sold out</li>
+<li>创建成功后，Servers界面会有显示，等待状态变成Running</li>
+</ul>
+</li>
+<li>连接服务器<ul>
+<li>点击刚才创建的Server进入详情页面</li>
+<li>页面显示该VPS的IP、Username、Password</li>
+</ul>
+</li>
+<li>远程登录VPS<ul>
+<li>mac用户直接ssh登录<code>ssh Username@IP</code></li>
+<li>win用户推荐使用putty软件</li>
+</ul>
+</li>
+<li>修改登录密码<ul>
+<li>输入<code>passwd</code>,要求输入新密码，按提示操作</li>
+</ul>
+</li>
+</ul>
+<p>#搭建ShadowSocks</p>
+<p>##VPS安装ShadowSocks</p>
+<ul>
+<li>推荐看秋水逸冰的<a href="https://teddysun.com/486.html" target="_blank" rel="external">《Shadowsocks一键安装脚本（四合一）》</a>的安装教程。</li>
+<li><p>运行以下命令</p>
+<p>  <code>wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh</code><br>  <code>chmod +x shadowsocks-all.sh</code><br>  <code>./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log</code></p>
+</li>
+<li><p>选择脚本（Python、R、Go、libev），任选一个</p>
+<p>  Which Shadowsocks server you’d select:<br>  1.Shadowsocks-Python<br>  2.ShadowsocksR<br>  3.Shadowsocks-Go<br>  4.Shadowsocks-libev<br>  Please enter a number (default 1):</p>
+<p>  选择ShadowSocks-Go，输入3…然后输入密码和端口，可直接回车使用默认的</p>
+</li>
+</ul>
 
-思考
-商城类APP业务复杂，对于单品的修改思考了一天也没有想到有效的解决办法。首先套餐包固定，单品固定，其中某单品可修改，但这几件单品之间的code都是不同的，不清楚数据结构该如何定义。
-
-购物类APP最重要的还有一个计价规则也十分重要。对于套餐包这种形式的计价麻烦，尤其遇到定制品分批付款。
-
-C#定义的packageItem类使用patica
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2017/10/10/10-10日常/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
-        
         <nav class="pagination" role="pagination">
-          
-          
-        </nav>
+    
+    
+    <a class="pull-right" href="/2017/10/10/10-10日常/">
+        日常随笔 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
     </div>
 </section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>Hi,this is Ryan's blog.</p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
+
 
       
 <!-- ============================ Footer =========================== -->
