@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>关于服务器搭建 | Hexo</title>
+  <title>Tag: database | Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="post-template">
+<body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -170,92 +170,69 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      
-<section id="intro">
-    <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
-    			<span class="post-meta">
-      <time datetime="2017-10-11T12:16:47.000Z" itemprop="datePublished">
-          2017-10-11
-      </time>
-    
-    
-    | 
-    <a href='/tags/shadowsocks/'>shadowsocks</a>
-    
-    
-</span>
-                <h1>关于服务器搭建</h1>
+      <!-- ============================ Hero Image =========================== -->
+
+<section id="hero" class="scrollme">
+    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                    <div>
+                        
+                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
+                        <p></p>
+                        
+                        <h2></h2>
+                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
+                        
+
+                    </div>
+                </div>
             </div>
+            <!-- // .col-md-12 -->
         </div>
-        <div class="col-md-8 col-md-offset-2">
-      		<blockquote>
-<p>#VPS搭建ShadowSocks翻墙<br>学习网址：<a href="https://www.diycode.cc/topics/738" target="_blank" rel="external">https://www.diycode.cc/topics/738</a></p>
-</blockquote>
-<h1 id="VPS提供商–Vultr-com"><a href="#VPS提供商–Vultr-com" class="headerlink" title="VPS提供商–Vultr.com"></a>VPS提供商–Vultr.com</h1><ul>
-<li>注册账号<ul>
-<li><a href="http://www.vultr.com/?ref=7038906注册" target="_blank" rel="external">http://www.vultr.com/?ref=7038906注册</a></li>
-<li>可使用支付宝充值，服务器按天计费</li>
-</ul>
-</li>
-<li>创建Server<ul>
-<li>在Vultr Server页面，点击右上角“+”按钮</li>
-<li>Los Angelos节点我在用，感觉还可以，看youtube视频没有压力</li>
-<li>操作系统CenterOS，选择的是5美元/月，2.5美元/月的sold out</li>
-<li>创建成功后，Servers界面会有显示，等待状态变成Running</li>
-</ul>
-</li>
-<li>连接服务器<ul>
-<li>点击刚才创建的Server进入详情页面</li>
-<li>页面显示该VPS的IP、Username、Password</li>
-</ul>
-</li>
-<li>远程登录VPS<ul>
-<li>mac用户直接ssh登录<code>ssh Username@IP</code></li>
-<li>win用户推荐使用putty软件</li>
-</ul>
-</li>
-<li>修改登录密码<ul>
-<li>输入<code>passwd</code>,要求输入新密码，按提示操作</li>
-</ul>
-</li>
-</ul>
-<h1 id="搭建ShadowSocks"><a href="#搭建ShadowSocks" class="headerlink" title="搭建ShadowSocks"></a>搭建ShadowSocks</h1><h2 id="VPS安装ShadowSocks"><a href="#VPS安装ShadowSocks" class="headerlink" title="VPS安装ShadowSocks"></a>VPS安装ShadowSocks</h2><ul>
-<li>推荐看秋水逸冰的<a href="https://teddysun.com/486.html" target="_blank" rel="external">《Shadowsocks一键安装脚本（四合一）》</a>的安装教程。</li>
-<li><p>运行以下命令</p>
-<p>  <code>wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh</code><br>  <code>chmod +x shadowsocks-all.sh</code><br>  <code>./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log</code></p>
-</li>
-<li><p>选择脚本（Python、R、Go、libev），任选一个</p>
-<p>  Which Shadowsocks server you’d select:<br>  1.Shadowsocks-Python<br>  2.ShadowsocksR<br>  3.Shadowsocks-Go<br>  4.Shadowsocks-libev<br>  Please enter a number (default 1):</p>
-<p>  选择ShadowSocks-Go，输入3…然后输入密码和端口，可直接回车使用默认的</p>
-</li>
-</ul>
-
-            <div class="clearfix"></div>
-            <hr class="nogutter">
-        </div>
-        <nav class="pagination" role="pagination">
-    
-    <a class="pull-left" href="/2017/10/24/关于建数据表的学习/" style="float: left;">
-        ← 关于建数据表的学习
-    </a>
-    
-    
-    <a class="pull-right" href="/2017/10/10/10-10日常/">
-        日常随笔 →
-    </a>
-    
-</nav>
-
-        <div class="duoshuo">
-
-
-</div>
+        <div class="herofade beige-dk"></div>
     </div>
 </section>
 
+<!-- Height spacing helper -->
+<div class="heightblock"></div>
+<!-- // End height spacing helper -->
 
+<!-- ============================ END Hero Image =========================== -->
+
+
+
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row boxes">
+                    
+                    
+                        
+                        
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                            
+                              <h4 class="title"><a href="/2017/10/24/关于建数据表的学习/">关于建数据表的学习</a></h4>
+                            
+                            <p><time datetime="2017-10-24T14:41:20.000Z"><a href="/2017/10/24/关于建数据表的学习/">2017-10-24</a></time></p>
+                        </div>
+                    
+                </div>
+            </div>    
+        </div>
+    </div>
+</section> 
+
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p>Hi,this is Ryan's blog.</p>
+        </div>
+    </div>
+</section>
       
 <!-- ============================ Footer =========================== -->
 
