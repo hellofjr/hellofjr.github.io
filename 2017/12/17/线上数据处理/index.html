@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives: 2017 | Hexo</title>
+  <title>线上数据处理 | Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -170,96 +170,53 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2017/12/17/线上数据处理/">线上数据处理</a></h4>
-                            
-                            <p><time datetime="2017-12-17T11:32:36.000Z"><a href="/2017/12/17/线上数据处理/">2017-12-17</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2017/10/24/关于建数据表的学习/">关于建数据表的学习</a></h4>
-                            
-                            <p><time datetime="2017-10-24T14:41:20.000Z"><a href="/2017/10/24/关于建数据表的学习/">2017-10-24</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2017/10/11/关于服务器搭建/">关于服务器搭建</a></h4>
-                            
-                            <p><time datetime="2017-10-11T12:16:47.000Z"><a href="/2017/10/11/关于服务器搭建/">2017-10-11</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2017/10/10/10-10日常/">日常随笔</a></h4>
-                            
-                            <p><time datetime="2017-10-10T12:04:36.000Z"><a href="/2017/10/10/10-10日常/">2017-10-10</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-12-17T11:32:36.000Z" itemprop="datePublished">
+          2017-12-17
+      </time>
+    
+    
+    | 
+    <a href='/tags/database/'>database</a>
+    
+    
+</span>
+                <h1>线上数据处理</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="线上环境的数据更新操作"><a href="#线上环境的数据更新操作" class="headerlink" title="线上环境的数据更新操作"></a>线上环境的数据更新操作</h1><p>在最近的工作中，初次接触到后台以及数据库，在项目第一次上线后，进行了一次较大的改版，数据结构发生了一些变化，本篇文章记录此次改版中我学习到的知识。</p>
+<p>1.已有的数据动的时候要慎重</p>
+<p>2.新增的字段最好为nullable，新增字段需要考虑到以前的数据，需要写升级接口来升级旧数据</p>
+<p>3.数据库结构同步与数据同步的操作</p>
+<p>4.更新的时候关闭服务，防止脏数据流入</p>
+<p>我这次遇到的数据量还不是很大，只有1000多条记录，对于上千万条的数据肯定又有不同的地方<br>参考网址：<a href="http://www.cnblogs.com/LipeiNet/p/7809567.html" target="_blank" rel="external">http://www.cnblogs.com/LipeiNet/p/7809567.html</a></p>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>Hi,this is Ryan's blog.</p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2017/10/24/关于建数据表的学习/">
+        关于建数据表的学习 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
