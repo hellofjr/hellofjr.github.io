@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Hexo</title>
+  <title>iOS企业APP发布流程 | Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -170,47 +170,12 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-<!-- ============================ Content =========================== -->
-
+      
 <section id="intro">
     <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2017/12/18/iOS企业APP发布流程/">iOS企业APP发布流程</a></h3>
-                    <span>
-                        <span class="post-meta">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
       <time datetime="2017-12-18T13:15:10.000Z" itemprop="datePublished">
           2017-12-18
       </time>
@@ -221,272 +186,38 @@
     
     
 </span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        企业证书发布app操作流程记录1.安装企业的plist文件，需要密码
-2.准备发布证书，苹果Provisioning Profiles —&gt;Distribution 创建发布证书，下载，安装
-3.xcode打包ipa包，导出enterprise版本的包
-4.将ipa包，512512，5757尺寸的png图片放到http服务器上
-5.修改plist文件，修改ipa包路径，以及512和57尺寸png图片的服务器路径
-6.plist文件
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2017/12/18/iOS企业APP发布流程/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <h1>iOS企业APP发布流程</h1>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2017/12/17/线上数据处理/">线上数据处理</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2017-12-17T11:32:36.000Z" itemprop="datePublished">
-          2017-12-17
-      </time>
-    
-    
-    | 
-    <a href='/tags/database/'>database</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        线上环境的数据更新操作在最近的工作中，初次接触到后台以及数据库，在项目第一次上线后，进行了一次较大的改版，数据结构发生了一些变化，本篇文章记录此次改版中我学习到的知识。
-1.已有的数据动的时候要慎重
-2.新增的字段最好为nullable，新增字段需要考虑到以前的数据，需要写升级接口来升级旧数据
-3.数据库结构同步与数据同步的操作
-4.更新的时候关闭服务，防止脏数据流入
-我这次遇到的数据量还不是很大，只有1000多条记录，对于上千万条的数
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2017/12/17/线上数据处理/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="企业证书发布app操作流程记录"><a href="#企业证书发布app操作流程记录" class="headerlink" title="企业证书发布app操作流程记录"></a>企业证书发布app操作流程记录</h1><p>1.安装企业的plist文件，需要密码</p>
+<p>2.准备发布证书，苹果Provisioning Profiles —&gt;Distribution 创建发布证书，下载，安装</p>
+<p>3.xcode打包ipa包，导出enterprise版本的包</p>
+<p>4.将ipa包，512<em>512，57</em>57尺寸的png图片放到http服务器上</p>
+<p>5.修改plist文件，修改ipa包路径，以及512和57尺寸png图片的服务器路径</p>
+<p>6.plist文件放到https访问的服务器上，记录地址</p>
+<p>7.前端download页面，修改访问的plist文件地址</p>
+<p>8.根据navigator.userAgent来判断当前客户端是iPhone还是iPad，访问plist文件，plist文件再去请求下载ipa的包</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2017/10/24/关于建数据表的学习/">关于建数据表的学习</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2017-10-24T14:41:20.000Z" itemprop="datePublished">
-          2017-10-24
-      </time>
-    
-    
-    | 
-    <a href='/tags/database/'>database</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        关于套餐包建表结构
-
-
-ID
-Name
-
-
-
-
-A
-价格
-
-
-B
-风格
-
-
-C
-空间
-
-
-
-此表只包含套餐包分类的基本元数据，本来是水平扩展的结构，有多少个分类就要建多少张表，不利于扩展，但是现在这种垂直结构，只需要一张元数据表就可以进行扩展。
-
-
-
-ID
-Name
-Type
-Addition
-
-
-
-
-A
-精英
-价格
-699
-
-
-B
-时尚
-价格
-899
-
-
-C
-轻奢
-价格
-1099
-
-
-D
-欧式
-风格
-…
-
-
-…
-…
-…
-…
-
-
-K
-主
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2017/10/24/关于建数据表的学习/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2017/10/11/关于服务器搭建/">关于服务器搭建</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2017-10-11T12:16:47.000Z" itemprop="datePublished">
-          2017-10-11
-      </time>
-    
-    
-    | 
-    <a href='/tags/shadowsocks/'>shadowsocks</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        
-#VPS搭建ShadowSocks翻墙学习网址：https://www.diycode.cc/topics/738
-
-VPS提供商–Vultr.com
-注册账号
-http://www.vultr.com/?ref=7038906注册
-可使用支付宝充值，服务器按天计费
-
-
-创建Server
-在Vultr Server页面，点击右上角“+”按钮
-Los Angelos节点我在用，感觉还可以，看youtube视频没有压力
-操作系统Cente
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2017/10/11/关于服务器搭建/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2017/10/10/10-10日常/">日常随笔</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2017-10-10T12:04:36.000Z" itemprop="datePublished">
-          2017-10-10
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        工作记录
-与供应链讨论定制品与标品下单流程
-讨论订单状态
-讨论套餐包内单品的修改
-学习C#
-
-思考
-商城类APP业务复杂，对于单品的修改思考了一天也没有想到有效的解决办法。首先套餐包固定，单品固定，其中某单品可修改，但这几件单品之间的code都是不同的，不清楚数据结构该如何定义。
-
-购物类APP最重要的还有一个计价规则也十分重要。对于套餐包这种形式的计价麻烦，尤其遇到定制品分批付款。
-
-C#定义的packageItem类使用patica
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2017/10/10/10-10日常/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
         <nav class="pagination" role="pagination">
-          
-          
-        </nav>
+    
+    
+    <a class="pull-right" href="/2017/12/17/线上数据处理/">
+        线上数据处理 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
     </div>
 </section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>Hi,this is Ryan's blog.</p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
+
 
       
 <!-- ============================ Footer =========================== -->
